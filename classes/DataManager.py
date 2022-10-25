@@ -176,7 +176,6 @@ class DataManager:
                 if valid == True:
                     film = self.get_video(user_input)                             
                     if film.get_rating == 'R':
-                        print("the movie is R")
                         if customer.r_movies() == False:
                             valid = False
                             user_input = input("This is a family account and cannot rent R rated movies, try another movie: \n>> ")
